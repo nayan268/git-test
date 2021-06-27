@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nayan webpage</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header::before {
+            background: url('tech2.jpg') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+
+        .navbar {
+            background-color: black;
+            height: 60px;
+            border-radius: 30px;
+            position:fixed;
+            width:100%;
+            z-index: 1;
+            
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 10px;
+        }
+
+        .navbar li a {
+            padding: 20px 10px;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .navbar li a:hover {
+            color: red
+        }
+
+        .search {
+            float: right;
+            height: 50px;
+            color: rgb(131, 25, 25);
+            padding: 12px 75px;
+
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: cornsilk;
+            padding: 3px 20px;
+            width: 129px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            display: block;
+            height: 150px;
+            width: 150px;
+            position: sticky;
+            border-style: solid;
+            border-radius: 20px;
+        }
+
+        .container {
+
+            margin: auto;
+            width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: #9e82d4;
+            margin: 4px 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 23px;
+            width: 33%;
+            align-items: center;
+
+        }
+
+        #one {
+            transition: all 1s ease-in-out 0.3s;
+        }
+
+        #one:hover {
+            background-color: green;
+            height: 300px;
+            width: 300px;
+            border-radius: 100px;
+            font-size: 25px;
+            transform: rotate(360deg);
+
+        }
+
+        #two {
+            transition: all 1s ease-in-out 0.3s;
+        }
+
+        #two:hover {
+            background-color: rgb(212, 112, 196);
+            height: 300px;
+            width: 300px;
+            font-size: 25px;
+            transform: skew(15deg);
+        }
+
+        #three {
+            transition: all 1s ease-in-out 0.5s;
+        }
+
+        #three:hover {
+            background-color: rgb(112, 167, 212);
+            transform: scale(1.5);
+        }
+
+        .contact {
+            background-color: #6cadf8;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .personal {
+            background-color: rgb(73, 163, 73);
+            width: 550px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+       
+        
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="flex">
+                <li><a href="">Home</a></li>
+                <li><a href="http://www.northcityanselm-jpr.ac.in/">My  Pevious School</a></li>
+                <li><a href="https://www.iitk.ac.in/">MY College </a></li>
+                <li><a href="#fourth">MY Contact info.</a></li>
+                <div class="search">
+                    <form action="http://www.google.com/search? " id="form" target="new">
+                        <input type="text" name="q" id="search" placeholder="Search this website">
+                        <button type="submit" id="form">Search</button>
+                    </form>
+                   
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1> I am Nayan khandelwal. </h1>
+        <img src="nayan.jpeg" id="nayanimg">
+        <h1>
+            <p> This is my personal Webpage. </p>
+        </h1>
+    </section>
+    <div class="container">
+        <div class="box" id="one">
+            <h4 class="heading">My Profile</h4>
+            <p>
+                I am currently pursuing Civil engineering at IIT kanpur;
+            </p>
+        </div>
+        <div class="box" id="two">
+            <h4 class="heading">MY Hobbies </h4>
+            <p>
+
+                I love playing chess.
+                I like cricket very much.
+                In free time I read books.
+            </p>
+        </div>
+        <div class="box" id="three">
+            <h4 class="heading">My Skills</h4>
+            <p>
+                I can code in c and c++ languages.
+                I know basics of python.
+                I know HTML and currently learning CSS and JAVASCRIPT.
+
+
+            </p>
+        </div>
+    </div>
+    <div class="contact">
+
+        <div class="personal " id="fourth">
+         <b>
+            My contact information
+         </b>  
+        </div>
+        <div> <h3>Email- 4702nayankhandelwal@gmail.com, nayank20@iitk.ac.in</h3></div>
+         <div><h3>Phone-no : 8112214513 , 0141-2336661</h3></div>
+
+    </div>
+
+
+</body>
+
+</html>
